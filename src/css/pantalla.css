@@ -13,4 +13,5 @@
     background-color:rgb(197, 197, 197);
     margin: 1px groove black;
     box-shadow: 1px 4px 1px 1px rgb(0, 0, 0);
+    overflow-x: hidden ;
 }
