@@ -10,10 +10,7 @@ import { evaluate} from 'mathjs'
 
 function App() {
 
-  useEffect(()=> {alert(`Modalidad de uso:
-  * Presionar ON para encender la calculadora.
-  * Utilizar clear para reinicar la pantalla.
-  * Realizar un solo click para bloquear el teclado y dos para apagar.`)},[])
+
 
   const [input, setInput] = useState('');
   const [onOff, setonOff] = useState(true);
@@ -66,6 +63,7 @@ const resul = () =>{
       </div>
     </div>
   );
+  
 }
 
 export default App;
