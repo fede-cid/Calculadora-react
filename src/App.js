@@ -5,10 +5,15 @@ import Boton from './componentes/boton'
 import'./componentes/Pantalla'
 import Pantalla from './componentes/Pantalla';
 import BotonClear from './componentes/BotonClear';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { evaluate} from 'mathjs'
+
 function App() {
 
+  useEffect(()=> {alert(`Modalidad de uso:
+  * Presionar ON para encender la calculadora.
+  * Utilizar clear para reinicar la pantalla.
+  * Realizar un solo click para bloquear el teclado y dos para apagar.`)},[])
 
   const [input, setInput] = useState('');
   const [onOff, setonOff] = useState(true);
