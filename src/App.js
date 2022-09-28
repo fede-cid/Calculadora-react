@@ -58,7 +58,7 @@ const resul = () =>{
         </div>
         <div className='fila'><Boton manejarClick={agregarInput}>00</Boton>
         <Boton manejarClick={agregarInput}>0</Boton>
-        <Boton manejarClick={agregarInput}>,</Boton>
+        <Boton manejarClick={agregarInput}>.</Boton>
         <Boton manejarClick={resul}>=</Boton></div>
       </div>
     </div>
