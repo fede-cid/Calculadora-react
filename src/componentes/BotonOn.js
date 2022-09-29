@@ -6,7 +6,7 @@ function BotonOn  (props) {
     useEffect(()=> {alert(`Modalidad de uso:
     * Presionar ON para encender la calculadora.
     * Utilizar clear para reinicar la pantalla.
-    * Realizar un solo click para bloquear el teclado y dos para apagar.`)},[])
+    * Realizar un solo click para bloquear el teclado y para apagar la calculadora.`)},[])
 return (
     <div className='botonOn-Off' 
     onClick={()=>props.estado(true)}>
