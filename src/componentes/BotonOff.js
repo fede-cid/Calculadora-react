@@ -1,12 +1,17 @@
 import React from "react";
 import '../css/botonOn-Off.css';
 
-const BotonOff = (props) => (
+const BotonOff = (props) => {
+    const apagar = () => {
+        props.estado(false)
+        props.manejarClear()
+    }
+    return (
     <div className='botonOn-Off' 
-    onClick={()=>props.estado(false)} onDoubleClick={props.manejarClear}>
+    onClick={apagar} >
         {props.children}
     </div>
-
-)
+    )
+}
 
 export default BotonOff

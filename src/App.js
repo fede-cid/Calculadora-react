@@ -5,7 +5,7 @@ import Boton from './componentes/boton'
 import'./componentes/Pantalla'
 import Pantalla from './componentes/Pantalla';
 import BotonClear from './componentes/BotonClear';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { evaluate} from 'mathjs'
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
   const agregarInput = val => {
     if(onOff)
     setInput( input + val );  
-   
+
   };
 
 const resul = () =>{ 
@@ -38,7 +38,7 @@ const resul = () =>{
         <Pantalla input={input}/>
         <div className='fila'>
         <BotonOn estado={setonOff} >On</BotonOn>
-        <BotonOff estado={setonOff} manejarClear={() => setInput('')}>Off</BotonOff>
+        <BotonOff estado={setonOff}  manejarClear={() => setInput('')}>Off</BotonOff>
         <Boton manejarClick={agregarInput}>%</Boton>
         <Boton manejarClick={agregarInput}>/</Boton>
         <BotonClear manejarClear={() => setInput('')}>Clear</BotonClear>
